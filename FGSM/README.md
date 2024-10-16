@@ -28,7 +28,10 @@ This project demonstrates a neural network trained on the MNIST dataset using Te
 
 ### Confusion Matrix
 - A confusion matrix is plotted for both clean and adversarial test data, showing the classification performance.
-![confusion matrix](Images/3.png) ![confusion matrix](Images/4.png)
+<p align="center">
+  <img src="Images/3.png" alt="Confusion Matrix 1" width="400"/>
+  <img src="Images/4.png" alt="Confusion Matrix 2" width="400"/>
+</p>
 
 ## Adversarial Attacks
 
