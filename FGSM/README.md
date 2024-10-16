@@ -28,7 +28,7 @@ This project demonstrates a neural network trained on the MNIST dataset using Te
 
 ### Training and Validation
 - **Accuracy**: The model achieved high accuracy on the original MNIST test dataset.
-<img src="Images/6.png" align="center"/>
+<img src="Images/6.png" align="center" width="400"/>
 - **Adversarial Evaluation**: Accuracy dropped significantly when subjected to adversarial attacks (FGSM, PGD).
 
 ### Confusion Matrix
