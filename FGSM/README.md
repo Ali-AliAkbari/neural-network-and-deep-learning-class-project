@@ -11,6 +11,7 @@ This project demonstrates a neural network trained on the MNIST dataset using Te
  <p align="center"> 
   <img src="Images/2.png"  width="500"/>
 </p>
+
 - **Model**: A fully connected neural network with three hidden layers trained on the MNIST dataset.
 - **Adversarial Attacks**:
   - **FGSM (Fast Gradient Sign Method)**: This attack perturbs the input images by adding small but intentional noise to make the model misclassify.
@@ -28,11 +29,11 @@ This project demonstrates a neural network trained on the MNIST dataset using Te
 
 ### Training and Validation
 - **Accuracy**: The model achieved high accuracy on the original MNIST test dataset.
-<div style="text-align: center;">
-  <img src="Images/6.png" alt="Centered Image" width="500"/>
-</div>
+<img src="Images/6.png" alt="Centered Image" width="500"/>
+
 - **Adversarial Evaluation**: Accuracy dropped significantly when subjected to adversarial attacks (FGSM, PGD).
 <img src="Images/5.png" align="center"/>
+
 ### Confusion Matrix
 - A confusion matrix is plotted for both clean and adversarial test data, showing the classification performance.
 <p align="center">
