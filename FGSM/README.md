@@ -5,6 +5,8 @@ This project demonstrates a neural network trained on the MNIST dataset using Te
 ## Project Overview
 
 - **Dataset**: MNIST dataset consisting of 60,000 training images and 10,000 test images of handwritten digits (0-9).
+  ![confusion matrix](Images/1.png)
+  ![confusion matrix](Images/2.png)
 - **Model**: A fully connected neural network with three hidden layers trained on the MNIST dataset.
 - **Adversarial Attacks**:
   - **FGSM (Fast Gradient Sign Method)**: This attack perturbs the input images by adding small but intentional noise to make the model misclassify.
