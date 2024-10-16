@@ -6,8 +6,10 @@ This project demonstrates a neural network trained on the MNIST dataset using Te
 
 - **Dataset**: MNIST dataset consisting of 60,000 training images and 10,000 test images of handwritten digits (0-9).
 <p align="center">
-  <img src="Images/1.png" alt="Confusion Matrix 1" width="400"/>
-  <img src="Images/2.png" alt="Confusion Matrix 2" width="400"/>
+  <img src="Images/1.png" width="400"/>
+</p>
+ <p align="center"> 
+  <img src="Images/2.png"  width="400"/>
 </p>
 - **Model**: A fully connected neural network with three hidden layers trained on the MNIST dataset.
 - **Adversarial Attacks**:
