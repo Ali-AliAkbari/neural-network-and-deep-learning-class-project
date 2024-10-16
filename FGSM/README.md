@@ -6,10 +6,10 @@ This project demonstrates a neural network trained on the MNIST dataset using Te
 
 - **Dataset**: MNIST dataset consisting of 60,000 training images and 10,000 test images of handwritten digits (0-9).
 <p align="center">
-  <img src="Images/1.png" width="600"/>
+  <img src="Images/1.png" width="500"/>
 </p>
  <p align="center"> 
-  <img src="Images/2.png"  width="600"/>
+  <img src="Images/2.png"  width="500"/>
 </p>
 - **Model**: A fully connected neural network with three hidden layers trained on the MNIST dataset.
 - **Adversarial Attacks**:
@@ -28,14 +28,14 @@ This project demonstrates a neural network trained on the MNIST dataset using Te
 
 ### Training and Validation
 - **Accuracy**: The model achieved high accuracy on the original MNIST test dataset.
-<img src="Images/6.png" align="center" width="400"/>
+<img src="Images/6.png" align="center" width="500"/>
 - **Adversarial Evaluation**: Accuracy dropped significantly when subjected to adversarial attacks (FGSM, PGD).
 <img src="Images/5.png" align="center"/>
 ### Confusion Matrix
 - A confusion matrix is plotted for both clean and adversarial test data, showing the classification performance.
 <p align="center">
-  <img src="Images/3.png" alt="Confusion Matrix 1" width="400"/>
-  <img src="Images/4.png" alt="Confusion Matrix 2" width="400"/>
+  <img src="Images/3.png" alt="Confusion Matrix 1" width="500"/>
+  <img src="Images/4.png" alt="Confusion Matrix 2" width="500"/>
 </p>
 
 ## Adversarial Attacks
