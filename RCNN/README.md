@@ -146,7 +146,9 @@ plt.legend()
 plt.show()
 ```
 The loss should gradually decrease, indicating successful training.
-
+<p align="center">
+  <img src="Images/4.jpg"  width="400"/>
+</p>
 ---
 
 ## References
