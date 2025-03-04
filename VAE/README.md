@@ -32,6 +32,50 @@ The VAE consists of:
 - **Latent Space**: A compressed representation of the input image.
 - **Decoder**: A series of transposed convolutional layers to reconstruct the image.
 
+## **How the Model Works**  
+### **Variational Autoencoder (VAE)**  
+A **VAE** is a generative model that learns to encode input images into a compressed latent space and then reconstructs them. The key difference from a standard Autoencoder is that a VAE learns a probability distribution over the latent space, which allows us to generate new data points by sampling from this distribution.
+
+### **Architecture Overview**  
+The model consists of three main components:  
+
+#### **1. Encoder**  
+The encoder takes an input image and compresses it into a lower-dimensional latent space. It consists of:  
+- **Four convolutional layers** with BatchNorm and ReLU activations.  
+- A **fully connected layer** that maps the feature maps to a latent representation.  
+- Two separate layers to generate the **mean (μ)** and **log-variance (σ²)** of the latent distribution.  
+
+#### **2. Latent Space Representation**  
+The **latent vector (z)** is sampled from a Gaussian distribution using the **reparameterization trick**:  
+
+\[
+z = \mu + \epsilon \cdot e^{\frac{\sigma}{2}}
+\]
+
+where \( \epsilon \) is a random noise vector sampled from a normal distribution.
+
+#### **3. Decoder**  
+The decoder reconstructs the image from the latent vector. It consists of:  
+- Two fully connected layers to map the latent space back to an image representation.  
+- **Five transposed convolutional layers** to upsample the compressed representation and generate the final output image.  
+- The final activation function is **Sigmoid**, ensuring pixel values are between 0 and 1.  
+
+### **Loss Function**  
+The training process minimizes the **VAE loss**, which consists of:  
+1. **Reconstruction Loss** (Mean Squared Error - MSE)  
+   - Ensures that the reconstructed image is similar to the input image.  
+2. **KL Divergence Loss**  
+   - Ensures the latent space follows a normal distribution, allowing smooth interpolation between generated images.  
+
+The total loss is given by:
+
+\[
+\mathcal{L} = \text{Reconstruction Loss} + \lambda \times \text{KL Divergence}
+\]
+
+where \( \lambda \) is a weighting factor (in this case, 1.5).  
+
+---
 ## Training
 The model is trained using the **Mean Squared Error (MSE) loss** combined with a **Kullback-Leibler (KL) divergence loss**.
 
