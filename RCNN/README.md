@@ -113,8 +113,18 @@ Sample output:
 Box: [50, 30, 200, 150], Label: Fish, Score: 0.85
 Box: [100, 60, 250, 200], Label: Jellyfish, Score: 0.78
 ```
-![Detection Output](output_image.jpg)
-
+<table>
+    <tr>
+        <td><img src="Image/4.jpg" width="300"/></td>
+        <td><img src="Image/5.jpg" width="300"/></td>
+        <td><img src="Image/6.png" width="300"/></td>
+    </tr>
+    <tr>
+        <td><img src="Image/7.png" width="300"/></td>
+        <td><img src="Image/8.jpg" width="300"/></td>
+        <td><img src="Image/9.jpg" width="300"/></td>
+    </tr>
+</table>
 ---
 
 ## Loss Function & Training Results
