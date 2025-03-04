@@ -147,7 +147,7 @@ plt.show()
 ```
 The loss should gradually decrease, indicating successful training.
 <p align="center">
-  <img src="Images/3.jpg"  width="400"/>
+  <img src="Images/3.png"  width="400"/>
 </p>
 ---
 
