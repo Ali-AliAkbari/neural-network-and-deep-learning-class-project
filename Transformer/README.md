@@ -37,10 +37,7 @@ The dataset consists of **COVID-19 related tweets** labeled as **real or fake**:
 - **Training Set:** `Constraint_Train.csv`
 - **Validation Set:** `Constraint_Val.csv`
 - **Test Set:** `english_test_with_labels.csv`
-<p align="center">
-  <img src="Images/1.png"  width="400"/>
-  <img src="Images/2.png"  width="400"/>
-</p>
+
 ### **Class Distribution**
 The dataset has an **imbalanced distribution**, with more real news samples than fake ones. Below is a visualization:
 
@@ -50,8 +47,10 @@ plt.bar(class_name, class_C, color='green', edgecolor='black')
 plt.title(f'Class Distribution in Training Data \n Total Count of Samples: {sum(class_C)}')
 plt.show()
 ```
-
-![Class Distribution](results/class_distribution.jpg)
+<p align="center">
+  <img src="Images/1.png"  width="400"/>
+  <img src="Images/2.png"  width="300"/>
+</p>
 
 ### **Word Cloud Visualization**
 The most frequent words in **real** and **fake** tweets are visualized using **word clouds**.
@@ -62,10 +61,14 @@ wordcloud(str(np.array(pre_Data)[np.where(np.array(Target) == 1)[0]]), 'Real New
 ```
 
 #### **Fake News Word Cloud**
-![Fake News Word Cloud](results/fake_news_wordcloud.jpg)
+<p align="center">
+  <img src="Images/3.png"  width="400"/>
+</p>
 
 #### **Real News Word Cloud**
-![Real News Word Cloud](results/real_news_wordcloud.jpg)
+<p align="center">
+  <img src="Images/4.png"  width="400"/>
+</p>
 
 ---
 
