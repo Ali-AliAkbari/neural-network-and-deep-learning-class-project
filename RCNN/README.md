@@ -31,7 +31,7 @@ The dataset is structured as follows:
 ```
 <p align="center">
   <img src="Images/1.png"  width="400"/>
-  <img src="Images/2.jpg"  width="400"/>
+  <img src="Images/2.jpg"  width="300"/>
 </p>
 Each label file contains bounding box annotations in **YOLO format**:
 ```
