@@ -1,3 +1,4 @@
+
 ---
 
 # **Fake News Detection Using Transformer-Based Models (BERT & CT-BERT)**
@@ -8,7 +9,7 @@ This project focuses on **fake news detection** using **Transformer-based models
 
 ## **Table of Contents**
 - [Project Overview](#project-overview)
-- [Dataset](#dataset)
+- [Dataset & Visualization](#dataset--visualization)
 - [Installation](#installation)
 - [Preprocessing](#preprocessing)
 - [Model Architecture](#model-architecture)
@@ -31,17 +32,37 @@ This project focuses on **fake news detection** using **Transformer-based models
 
 ---
 
-## **Dataset**
+## **Dataset & Visualization**
 The dataset consists of **COVID-19 related tweets** labeled as **real or fake**:
 - **Training Set:** `Constraint_Train.csv`
 - **Validation Set:** `Constraint_Val.csv`
 - **Test Set:** `english_test_with_labels.csv`
 
-### **Data Preprocessing:**
-1. **Tokenization** using BERT’s tokenizer.
-2. **Removing stop words, special characters, and URLs.**
-3. **Converting emojis into text.**
-4. **Lemmatization** to get word roots.
+### **Class Distribution**
+The dataset has an **imbalanced distribution**, with more real news samples than fake ones. Below is a visualization:
+
+```python
+plt.figure(figsize=[7,5])
+plt.bar(class_name, class_C, color='green', edgecolor='black')
+plt.title(f'Class Distribution in Training Data \n Total Count of Samples: {sum(class_C)}')
+plt.show()
+```
+
+![Class Distribution](results/class_distribution.jpg)
+
+### **Word Cloud Visualization**
+The most frequent words in **real** and **fake** tweets are visualized using **word clouds**.
+
+```python
+wordcloud(str(np.array(pre_Data)[np.where(np.array(Target) == 0)[0]]), 'Fake News')
+wordcloud(str(np.array(pre_Data)[np.where(np.array(Target) == 1)[0]]), 'Real News')
+```
+
+#### **Fake News Word Cloud**
+![Fake News Word Cloud](results/fake_news_wordcloud.jpg)
+
+#### **Real News Word Cloud**
+![Real News Word Cloud](results/real_news_wordcloud.jpg)
 
 ---
 
@@ -106,24 +127,6 @@ This project implements **four different models**:
 4. **BERT with BiGRU (Fine-Tuned BERT)**
    - The entire **BERT model is trainable**.
    - BiGRU processes sequences before classification.
-
-### **Model Implementation Example (BiGRU with BERT)**
-```python
-class BertBiGRU(nn.Module):
-    def __init__(self, bert_model, hidden_dim, output_dim, n_layers):
-        super(BertBiGRU, self).__init__()
-        self.bert = bert_model      
-        self.bigru = nn.GRU(bert_model.config.hidden_size, hidden_dim, num_layers=n_layers, batch_first=True, bidirectional=True)
-        self.fc = nn.Linear(hidden_dim * 2, output_dim)
-        self.activ = nn.Sigmoid()
-
-    def forward(self, input_ids, attention_mask):
-        embedded = self.bert(input_ids, attention_mask=attention_mask)[0] 
-        gru_output, hidden = self.bigru(embedded)
-        hidden = torch.cat((hidden[-2,:,:], hidden[-1,:,:]), dim=1)
-        output = self.activ(self.fc(hidden))
-        return output
-```
 
 ---
 
@@ -204,4 +207,3 @@ Actual: Fake
 - **Hugging Face Transformers Library**: https://huggingface.co/docs/transformers/  
 
 ---
-
