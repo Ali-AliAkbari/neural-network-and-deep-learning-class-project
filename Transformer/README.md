@@ -37,7 +37,10 @@ The dataset consists of **COVID-19 related tweets** labeled as **real or fake**:
 - **Training Set:** `Constraint_Train.csv`
 - **Validation Set:** `Constraint_Val.csv`
 - **Test Set:** `english_test_with_labels.csv`
-
+<p align="center">
+  <img src="Images/1.png"  width="400"/>
+  <img src="Images/2.jpg"  width="400"/>
+</p>
 ### **Class Distribution**
 The dataset has an **imbalanced distribution**, with more real news samples than fake ones. Below is a visualization:
 
