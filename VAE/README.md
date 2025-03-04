@@ -32,6 +32,8 @@ The VAE consists of:
 - **Latent Space**: A compressed representation of the input image.
 - **Decoder**: A series of transposed convolutional layers to reconstruct the image.
 
+---
+
 ## **How the Model Works**  
 ### **Variational Autoencoder (VAE)**  
 A **VAE** is a generative model that learns to encode input images into a compressed latent space and then reconstructs them. The key difference from a standard Autoencoder is that a VAE learns a probability distribution over the latent space, which allows us to generate new data points by sampling from this distribution.
