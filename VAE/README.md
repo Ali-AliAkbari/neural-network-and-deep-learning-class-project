@@ -56,8 +56,9 @@ decoder_img(model_cartoon, z, device)
 ```
 This will produce a new cartoon face from the learned latent distribution.
 <p align="center">
-  <img src="Images/3.png" width="500"/>
+  <img src="Images/3.png"/>
 </p>
+
 ## Results
 Training loss is plotted using:
 ```python
