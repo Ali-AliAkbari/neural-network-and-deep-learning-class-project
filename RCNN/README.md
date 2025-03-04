@@ -115,14 +115,14 @@ Box: [100, 60, 250, 200], Label: Jellyfish, Score: 0.78
 ```
 <table>
     <tr>
-        <td><img src="Image/4.jpg" width="300"/></td>
-        <td><img src="Image/5.jpg" width="300"/></td>
-        <td><img src="Image/6.png" width="300"/></td>
+        <td><img src="Images/4.jpg" width="300"/></td>
+        <td><img src="Images/5.jpg" width="300"/></td>
+        <td><img src="Images/6.png" width="300"/></td>
     </tr>
     <tr>
-        <td><img src="Image/7.png" width="300"/></td>
-        <td><img src="Image/8.jpg" width="300"/></td>
-        <td><img src="Image/9.jpg" width="300"/></td>
+        <td><img src="Images/7.png" width="300"/></td>
+        <td><img src="Images/8.jpg" width="300"/></td>
+        <td><img src="Images/9.jpg" width="300"/></td>
     </tr>
 </table>
 ---
