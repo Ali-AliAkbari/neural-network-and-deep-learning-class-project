@@ -17,3 +17,6 @@ In addition to the main projects, I also worked on several side projects that en
 
 ## Table of Projects
 1. [MNIST-Adversarial-Attacks-TensorFlow](FGSM)
+2. [Variational Autoencoder (VAE) for Cartoon Face Generation](VAE)
+
+
