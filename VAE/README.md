@@ -59,6 +59,10 @@ Training loss is plotted using:
 ```python
 plot(num_epochs, train_losses_epoch, train_losses_recon)
 ```
+<p align="center">
+  <img src="Images/1.png"  width="400"/>
+  <img src="Images/2.png"  width="400"/>
+</p>
 
 ## Acknowledgments
 - **Kaggle** for providing the dataset.
