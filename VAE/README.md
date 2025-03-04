@@ -55,7 +55,9 @@ z = torch.rand(35).to(device)*-1.9 + torch.exp(1*b[0]/2)
 decoder_img(model_cartoon, z, device)
 ```
 This will produce a new cartoon face from the learned latent distribution.
-
+<p align="center">
+  <img src="Images/3.png" width="500"/>
+</p>
 ## Results
 Training loss is plotted using:
 ```python
