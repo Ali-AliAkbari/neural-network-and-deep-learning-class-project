@@ -60,13 +60,9 @@ wordcloud(str(np.array(pre_Data)[np.where(np.array(Target) == 0)[0]]), 'Fake New
 wordcloud(str(np.array(pre_Data)[np.where(np.array(Target) == 1)[0]]), 'Real News')
 ```
 
-#### **Fake News Word Cloud**
+#### **Fake News Word Cloud** and **Real News Word Cloud**
 <p align="center">
   <img src="Images/3.png"  width="400"/>
-</p>
-
-#### **Real News Word Cloud**
-<p align="center">
   <img src="Images/4.png"  width="400"/>
 </p>
 
