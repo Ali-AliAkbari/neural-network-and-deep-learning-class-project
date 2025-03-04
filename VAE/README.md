@@ -50,9 +50,7 @@ The encoder takes an input image and compresses it into a lower-dimensional late
 #### **2. Latent Space Representation**  
 The **latent vector (z)** is sampled from a Gaussian distribution using the **reparameterization trick**:  
 
-\[
-z = \mu + \epsilon \cdot e^{\frac{\sigma}{2}}
-\]
+$$z = \mu + \epsilon \cdot e^{\frac{\sigma}{2}}$$
 
 where \( \epsilon \) is a random noise vector sampled from a normal distribution.
 
@@ -74,7 +72,7 @@ The total loss is given by:
 $$\mathcal{L} = \text{Reconstruction Loss} + \lambda \times \text{KL Divergence}$$
 
 
-where \( \lambda \) is a weighting factor (in this case, 1.5).  
+where $ \lambda $ is a weighting factor (in this case, 1.5).  
 
 ---
 ## Training
