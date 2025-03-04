@@ -6,7 +6,9 @@ This repository contains a PyTorch implementation of a Variational Autoencoder (
 ## Dataset
 The dataset used is the **Google Cartoon Set**, available on Kaggle:
 [Cartoon Faces - Google's Cartoon Set](https://www.kaggle.com/datasets)
-
+<p align="center">
+  <img src="Images/4.png" />
+</p>
 Images are loaded from the dataset, preprocessed, and used for training the VAE model.
 
 ## Dependencies
