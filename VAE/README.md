@@ -72,7 +72,7 @@ The total loss is given by:
 $$\mathcal{L} = \text{Reconstruction Loss} + \lambda \times \text{KL Divergence}$$
 
 
-where $ \lambda $ is a weighting factor (in this case, 1.5).  
+where $\lambda$ is a weighting factor (in this case, 1.5).  
 
 ---
 ## Training
